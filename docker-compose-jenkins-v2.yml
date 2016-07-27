@@ -3,7 +3,7 @@ version: '2'
 services:
 
   app:
-    image: vfarcic/books-ms
+    image: rbogdanoff/books-ms
     ports:
       - 8080
     environment:
@@ -29,7 +29,7 @@ services:
       - SERVICE_NAME=books-ms-db
 
   integ:
-    image: vfarcic/books-ms-tests
+    image: rbogdanoff/books-ms-tests
     volumes:
       - ./src:/source/src
     environment:
